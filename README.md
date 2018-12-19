@@ -1,0 +1,6 @@
+# WPCourse
+Codes (PHP, Javascript, ASP.NET Core) written in the course.
+
+You can get all the course contents via https://www.e-adys.com/adys/OpenCourse/Course/Web_Tasarımı_ve_Programlama/24.
+
+Happy Code :)
