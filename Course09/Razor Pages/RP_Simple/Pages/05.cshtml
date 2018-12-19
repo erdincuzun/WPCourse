@@ -1,0 +1,30 @@
+@page
+<!-- for -->
+@for(var j = 10; j < 14; j++)
+    {<p>Satır @j</p>}
+
+<!-- while -->
+@{
+var i = 0;
+while (i < 3)
+    {
+    i += 1;
+    <p>Satır @i</p>
+    }
+}
+
+<!-- array ve foreach -->
+@{
+    string[] weekDays = { "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat" };
+    int ind = Array.IndexOf(weekDays, "Wed")+1;
+    int len = weekDays.Length;
+    string theday = weekDays[2];
+}
+
+@foreach (var _day in weekDays)
+    {<li>@_day</li>}
+
+<p>@ind</p>
+<p>@len</p>
+<p>@theday</p>
+

@@ -1,0 +1,17 @@
+@page
+@{
+    Layout = "_mylayout";    
+}
+
+@try
+{
+    throw new InvalidOperationException("You did something invalid.");
+}
+catch (Exception ex)
+{
+    <p>The exception message: @ex.Message</p>
+}
+finally
+{
+    <p>The finally statement.</p>
+}

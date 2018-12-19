@@ -1,0 +1,37 @@
+@page
+@{var fiyat=25;}
+@if (fiyat>=30)
+{
+  <p>Fiyat yüksek.</p>
+}
+else if (fiyat>20 && fiyat<30) 
+{
+  <p>Fiyat uygun.</p>
+}
+else
+{
+  <p>Fiyat düşük.</p>
+}    
+
+
+@{
+var gun=DateTime.Now.DayOfWeek;
+var gun_str= gun.ToString();
+var message="";
+}
+@switch(gun_str)
+{
+case "Monday":
+    message="Haftanın ilk günü.";
+    break;
+case "Thursday":
+    message="Haftasonuna bir gün kaldı.";
+    break;
+case "Friday":
+    message="Yarın haftasonu!";
+    break;
+default:
+    message="Bu gün " + gun_str;
+    break;
+}
+<p>@message</p>

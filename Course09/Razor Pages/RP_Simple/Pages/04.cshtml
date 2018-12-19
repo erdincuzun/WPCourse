@@ -1,0 +1,18 @@
+@page
+<!-- var kullanımı ile -->
+@{  var degisken = "Merhaba Razor Pages!";
+    var sayac = 103;
+    var bugun = DateTime.Today; }
+
+<p>@degisken </p> 
+<p>@sayac </p>
+<p>@bugun </p>
+<!-- veri tipine göre kullanım -->
+@{
+string degisken1 = "Welcome to W3Schools";
+int sayac1 = 103;
+DateTime bugun1 = DateTime.Today; 
+}
+<p>@degisken1 </p> 
+<p>@sayac1 </p>
+<p>@bugun1 </p>

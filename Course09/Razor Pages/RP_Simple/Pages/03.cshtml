@@ -1,0 +1,14 @@
+@page
+<!-- Tek blokluk ifade -->
+@{ var myMessage = "Merhaba Razor Pages!"; }
+
+<!-- Satır içinde ifade / değişken -->
+<p>myMessage değişkeninin değeri: @myMessage</p> 
+
+<!-- Çok bloklu bir ifade -->
+@{
+var degisken = "Hoşgeldiniz!";
+var weekDay = DateTime.Now.DayOfWeek;
+var degiskenMessage = degisken + " Haftanın günü: " + weekDay;
+}
+<p>Merhaba: @degiskenMessage</p> 
