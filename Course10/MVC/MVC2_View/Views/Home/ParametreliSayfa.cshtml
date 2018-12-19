@@ -1,0 +1,16 @@
+@{
+    Layout = "";
+}
+
+@{
+    ViewData["Title"] = "Parametreli örnek"; //Bu _Layout gider, ancak bu sayfa için ben Layout boş geçtim.
+}
+
+<h2>Parametreli örnek</h2>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["kackere"]; i++)
+    {
+        <li>@ViewData["metin"]</li>
+    }
+</ul>
