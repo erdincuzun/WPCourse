@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Merhaba Javascript</title>
+    </head>
+    <body>
+        <h1>Merhaba Javascript</h1>
+        <input type="number" id="sayi" value=""/>
+        <p id="hata"></p>
+        <button type="button" onclick="kontrol()">Kontrol</button>
+
+        <script> 
+            function kontrol(){
+                deg = document.getElementById("sayi").value;
+                if (isNaN(deg) || deg < 1 || deg >10)
+                    document.getElementById("hata").innerHTML = "Hata oluştu";
+                else
+                    document.getElementById("hata").innerHTML = "Süper...";
+            }               
+        </script>
+    </body>
+</html>

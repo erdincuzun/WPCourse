@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Merhaba Javascript</title>
+    </head>
+    <body>
+        <h1>Merhaba Javascript</h1>
+        <p id="erisim1">Denemelere devam...</p>
+        <p id="erisim2">Denemelere devam...</p>
+        <p id="erisim3">Denemelere devam...</p>
+        <p id="erisim4">Denemelere devam...</p>
+
+
+        <script src="deneme.js"></script>
+        <script>
+            document.getElementById('erisim1').innerHTML = topla(5, 6);
+            document.getElementById('erisim2').innerHTML = topla("5", 6);
+            document.getElementById('erisim3').innerHTML = topla(5, "6");
+            document.getElementById('erisim4').innerHTML = topla("5", "6");
+        </script>
+    </body>
+</html>

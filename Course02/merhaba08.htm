@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Merhaba Javascript</title>
+    </head>
+    <body>
+        <h1>Merhaba Javascript</h1>
+        <p id="erisim1">Merhaba</p>
+        <p id="erisim2"></p>
+        <p id="erisim3"></p>
+        <p id="erisim4"></p>
+        <p id="erisim5"></p>
+        <p id="erisim6"></p>
+
+        <script>
+            x = document.getElementById('erisim1').innerHTML;
+            document.getElementById('erisim2').innerHTML = x[1];
+            document.getElementById('erisim3').innerHTML = x.indexOf("a");
+            document.getElementById('erisim4').innerHTML = x.indexOf("a", 5);
+            document.getElementById('erisim4').innerHTML = x.indexOf("a", 7);
+            document.getElementById('erisim6').innerHTML = x.lastIndexOf("a");
+
+            elm01 = document.getElementById('erisim2');
+            elm01.innerHTML = "Merhaba...";
+            elm01.style.color = "red";
+            elm01.style.fontStyle = "italic";
+
+        </script>
+    </body>
+</html>

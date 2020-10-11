@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Merhaba Javascript</title>
+    </head>
+    <body>
+        <h1>Merhaba Javascript</h1>
+        <p id="erisim1" class="test1"></p>
+        <p class="erisim2"></p>
+        <p></p>
+        <p class="erisim2"></p>
+        <p class="erisim2"></p>
+
+        <script> 
+        document.getElementsByTagName('p')[2].innerHTML = "getElementsByTagName ile kullanım";
+        document.getElementsByClassName('erisim2')[0].innerHTML = "getElementsByClassName ile kullanım";
+        document.getElementById('erisim1').innerHTML = "getElementById ile kullanım";
+
+        console.log("Merhaba console ekranı");
+                        
+        </script>
+    </body>
+</html>
